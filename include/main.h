@@ -47,6 +47,6 @@ void procesarPuntoContar(const char *oracion, regex_t *er, const char *palabra, 
  *
  * @note Se verifica para ambos tipos de codificación (sistemas UNIX y no UNIX). Recomendamos ver el informe para más información.
  */
-static int esFinDeOracion(char caracterLeido, char caracterSiguiente);
+int esFinDeOracion(char caracterLeido, char caracterSiguiente);
 
 #endif //MAIN_H
