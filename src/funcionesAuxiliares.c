@@ -21,7 +21,7 @@ void procesarPuntoContar(const char *oracion, regex_t *er, const char *palabra,
     }
 }
 
-static int esFinDeOracion(const char caracterLeido, const char caracterSiguiente) {
+int esFinDeOracion(const char caracterLeido, const char caracterSiguiente) {
     return caracterLeido == '.' &&
            (caracterSiguiente == ' ' || caracterSiguiente == '\n' || caracterSiguiente == '\r' || caracterSiguiente ==
             EOF);
